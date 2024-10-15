@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    line-height: 2;
+}
+
+.intro-image {
+    background-attachment: fixed;
+    background-image: url('../img/image2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.intro-image__text {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    transition: all 0.75s ease-in-out;
+    animation-name: moveInRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn {
+    background-color: #d9dad8c5;
+    border: 2px solid #d9dad884;
+    color: black;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(5px);
+}
+
+.intro-text {
+    background-color: rgba(3, 95, 44, 0.666);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    padding: 0 15rem;
+    text-align: center;
+}
+
+.intro-text__textbox {
+    font-size: 1rem;
+}
+
+.heading-solid {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.beige {
+    color: beige;
+    text-transform: uppercase;
+}
+
+.green {
+    color: green;
+    text-transform: uppercase;
+
+}
+
+.text-solid {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.packaging-image {
+    background-attachment: fixed;
+    background-image: url('../img/image3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.packaging-image__text {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.packaging-text {
+    background-color: beige;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    padding: 0 15rem;
+    text-align: center;
+}
+
+.packaging-text__textbox {
+    font-size: 1rem;
+}
+
+.tutorials-image {
+    background-attachment: fixed;
+    background-image: url('../img/image4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7rem;
+    overflow: hidden;
+    clip-path: polygon(30% 18%, 100% 12%, 100% 44%, 100% 100%, 48% 97%, 36% 94%, 0 100%, 0 40%, 0 4%);
+}
+
+.tutorials-image__text {
+    display: inline-block;
+    font-size: 3rem;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.75s ease-in-out;
+    transition: all 0.75s ease-in-out;
+    animation-name: moveInDown;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveInDown {
+    0% {
+        transform: translateY(300px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color:rgb(253, 187, 95);
+    color:#0e0705;
+    font-size: 1.3rem;
+    height: 200px;
+    padding: 3rem;
+    margin-top: -2.5rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 0.8rem;
+}
+
+.footer ul li a {
+    color:#0e0705;
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover {
+    color: rgba(0, 0, 0, 0.544);
+    transform: scale(1.1);
+}
